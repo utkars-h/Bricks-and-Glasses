@@ -1,0 +1,29 @@
+{% extends 'base.html' %} 
+
+{% block content %}
+<h1>Hello Render World!</h1>
+
+
+{{ name }}
+{{ number }}
+<hr>
+
+<ul>
+    {% for item in my_list%}
+        <li> {{ item }} </li>
+    {% endfor %}
+</ul>
+
+
+
+
+
+
+
+
+{% endblock %}
+
+
+<!-- 
+    {% include '' %} for including a component to every place
+-->
